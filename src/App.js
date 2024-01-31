@@ -3,7 +3,7 @@ import axios from 'axios';
 import WeatherDisplay from './components/WeatherDisplay';
 import ForecastDisplay from './components/ForecastDisplay';
 
-const API_KEY = '4f8439ddf8c9da032a6db9e865e21f5b';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [city, setCity] = useState('');
