@@ -14,7 +14,7 @@ function ForecastDisplay({ forecastData, unit }) {
   return (
     <div className='sm:mb-10'>
       <h2  className='text-white font-bold text-3xl  mb-5 ml-5'>5-Day Forecast</h2>
-      <div className='md:grid md:grid-cols-5 md:gap-4 md:ml-5 sm:grid sm:grid-cols-1 sm:gap-1 sm:w-90'>
+      <div className='md:grid md:grid-cols-5 md:gap-4 md:ml-5 sm:grid sm:grid-cols-1 sm:gap-1 sm:w-80'>
         {filteredData.map((item, index) => (
           <div key={index} className='bg-opacity-25 backdrop-blur-lg bg-white hover:bg-opacity-30 text-white font-bold py-2 px-4 rounded-lg mt-5' >
             <p>Date: {formatDate(item.dt)}</p>
